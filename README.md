@@ -2,13 +2,12 @@
 
 **Personalized Multi-Modal Viewport Prediction for 360° Video**
 
-UMVP360 predicts where a viewer will look in a 360° video up to **5 seconds ahead**, using past head motion, dense visual saliency, and optional user/audio/face signals. It extends [STAR-VP](https://dl.acm.org/doi/10.1145/3664647.3681518) (ACM MM 2024) with a modular design — one model, one training script, toggleable components for ablation studies.
-
+UMVP360 predicts where a viewer will look in a 360° video up to **5 seconds ahead**, using past head motion, dense visual saliency, and optional user/audio/face signals.
 ---
 
 ## Features
 
-- **STAR-VP backbone** — LSTM → Spatial Attention → Temporal Attention → Gating Fusion
+
 - **Dense saliency** — 16×32 SalViT360 token grid (512 tokens/frame)
 - **Rich trajectory input** — head, eye gaze, offset, and fixation features
 - **User personalization** — per-user embedding + FiLM modulation
